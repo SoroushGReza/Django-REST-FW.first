@@ -18,8 +18,10 @@ class LikeList(generics.ListCreateAPIView):
 
 
 class LikeDetail(generics.RetrieveDestroyAPIView):
-    """ Retrieve a like. No Update view, as users can only like or unlike a post. Destroy a like, i.e. unlike a post if owner of that like """
-
+    """ Retrieve a like. 
+    No Update view, as users can only like or unlike a post. 
+    Destroy a like, i.e. unlike a post if owner of that like 
+    """
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Like.objects.all()
     serializer_class = LikeSerializer
