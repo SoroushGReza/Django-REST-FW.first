@@ -64,7 +64,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-soroushgrez-djangorestf-2qrxvtkn8lg.ws-us105.gitpod.io',
     'localhost',
-    'django-rest-framwork-first.herokuapp.com'
+    'django-rest-framwork-first-3168ada70b98.herokuapp.com'
 ]
 
 
