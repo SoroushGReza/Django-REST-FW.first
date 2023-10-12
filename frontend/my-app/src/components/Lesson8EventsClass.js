@@ -1,0 +1,16 @@
+import React, { Component } from 'react'
+
+export class Lesson8EventsClass extends Component {
+  clickHandler() {
+    console.log("Clicked the class button")
+  }
+  render() {
+    return (
+      <div>
+        <button onClick={this.clickHandler}>Click me - Class component</button>
+      </div>
+    )
+  }
+}
+
+export default Lesson8EventsClass
