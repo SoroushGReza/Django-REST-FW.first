@@ -113,11 +113,6 @@ if 'CLIENT_ORIGIN' in os.environ:
         os.environ.get('CLIENT_ORIGIN')
     ]
 
-CORS_ALLOWED_ORIGINS = [
-    os.environ.get('CLIENT_ORIGIN', ''),
-]
-
-
 CORS_ALLOWED_CREDENTIALS = True
 
 ROOT_URLCONF = 'drf_api.urls'
