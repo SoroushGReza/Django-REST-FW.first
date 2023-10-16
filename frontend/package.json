@@ -19,35 +19,35 @@
   },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "msw": "^0.35.0"
-  },
-  "engines": {
-    "node": "16.19.1",
-    "npm": "8.19.3"
-  },
-  "proxy": "http://localhost:8000/"
+},
+"eslintConfig": {
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ]
+},
+"browserslist": {
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
+},
+"devDependencies": {
+  "msw": "^0.35.0"
+},
+"engines": {
+  "node": "16.19.1",
+  "npm": "8.19.3"
+},
+"proxy": "http://localhost:8000/"
 }
